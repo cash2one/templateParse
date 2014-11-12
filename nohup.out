@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "parse_template_rpyc.py", line 396, in <module>
+    main()
+  File "parse_template_rpyc.py", line 390, in main
+    parser.start()
+  File "parse_template_rpyc.py", line 372, in start
+    self.parse_toufang_items()
+  File "parse_template_rpyc.py", line 265, in parse_toufang_items
+    item_style = self.parse_items_style(ad_item['item_class'])
+  File "parse_template_rpyc.py", line 361, in parse_items_style
+    return item_style[item_class[0]]
+KeyError: u'icon'
+Traceback (most recent call last):
+  File "parse_template_rpyc.py", line 396, in <module>
+    main()
+  File "parse_template_rpyc.py", line 390, in main
+    parser.start()
+  File "parse_template_rpyc.py", line 372, in start
+    self.parse_toufang_items()
+  File "parse_template_rpyc.py", line 265, in parse_toufang_items
+    item_style = self.parse_items_style(ad_item['item_class'])
+  File "parse_template_rpyc.py", line 361, in parse_items_style
+    return item_style[item_class[0]]
+KeyError: u'subLink'
+Can't open 'grap_page_test.js'
