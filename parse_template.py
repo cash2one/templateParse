@@ -11,6 +11,7 @@
  * @目前这个脚本只会提取一个页面中的第一个广告位信息，会忽略其他的。后续会增加上。
  * @author zhongzhiwei01(zhongzhiwei01@baidu.com)
  * @date 2014/08/19 15:13:28 
+ * @hello world
 """
 
 
