@@ -7,7 +7,7 @@ if (system.args.length !== 2){
 }
 
 //请求url地址
-url = system.args[1];
+var url = system.args[1];
 
 var winNoticeAll = new Array();
 var syncReqAll = new Array();
