@@ -1,7 +1,7 @@
 var page = require('webpage').create(),
     system = require('system');
 
-if (system.args.length === 1){
+if (system.args.length !== 2){
     console.log('Usage: grap_page.js <some URL>');
     phantom.exit();
 }
