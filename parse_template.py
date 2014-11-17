@@ -280,6 +280,8 @@ class Parser(object):
             tm_ads_all: The ads's information in the template in the page.
             ad_number_all: The number of the ad in each template.
             tm_logo_all: The logo info of the template in the page.
+            wn_info_all: The winnotice info in the page.
+            sync_info_all: The sync info in the page.
         """
         total_report_table = html.XtsHtmlTable()
 
