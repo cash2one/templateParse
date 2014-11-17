@@ -11,7 +11,6 @@
  * @目前这个脚本只会提取一个页面中的第一个广告位信息，会忽略其他的。后续会增加上。
  * @author zhongzhiwei01(zhongzhiwei01@baidu.com)
  * @date 2014/08/19 15:13:28 
- * @hello world
 """
 
 
@@ -20,6 +19,7 @@ import codecs
 import json
 import logging
 import re
+import random
 import os
 import Queue
 import subprocess
@@ -327,12 +327,13 @@ class Parser(object):
                 logger.error('The information of the ads in template is wrong.')
 
         #report_table.add_body_line(element, value)
-        f = open('/home/users/zhongzhiwei01/nginx_pb/html/tm_report_1.html', 'w')
+        report_name = "template_report_" + ''.join(random.sample(string.digits * (6 / 10 + 1), 6))
+        f = open('/home/users/zhongzhiwei01/nginx_pb/html/tm_report/' + report_name + ".html", 'w')
         f.write(str(total_report_table))
         f.write(str(ad_report_table))
         f.close()
         logger.info('The web report is complete.')
-        print "http://cp01-rdqa-pool670.cp01.baidu.com:8045/tm_report_1.html"
+        print "http://cp01-rdqa-pool670.cp01.baidu.com:8045/tm_report/" + report_name + ".html"
 
     def parse_items_style(self, item_class):
         """
