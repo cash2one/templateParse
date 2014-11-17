@@ -118,7 +118,6 @@ class Parser(object):
             self.template_data = json.loads(output)
         except ValueError as e:
             logger.error(e)
-            print 'hrere'
             print -1
             sys.exit(1)
 
