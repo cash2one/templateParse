@@ -1,10 +1,9 @@
 # -*- coding: GB18030 -*-
 '''
-ÇëÊ¹ÓÃhtmlex.py£ºÄ³Ğ©½Ó¿Ú²»Ò»ÖÂ£¬²»½¨Òé¼ÌĞøÊ¹ÓÃ
+è¯·ä½¿ç”¨htmlex.pyï¼šæŸäº›æ¥å£ä¸ä¸€è‡´ï¼Œä¸å»ºè®®ç»§ç»­ä½¿ç”¨
 
-@author: xuwei01@baidu.com 
-@summary: ÒÔOO·½Ê½Éú³Éhtml,ÒÔ¼°¶ÔtableµÄ·â×°
-@note: ÔÚpyh»ù´¡ÉÏµÄ¸Ä½ø£¬Ô­×÷ÕßÎªEmmanuel Turlay <turlay@cern.ch>
+@summary: ä»¥OOæ–¹å¼ç”Ÿæˆhtml,ä»¥åŠå¯¹tableçš„å°è£…
+@note: åœ¨pyhåŸºç¡€ä¸Šçš„æ”¹è¿›ï¼ŒåŸä½œè€…ä¸ºEmmanuel Turlay <turlay@cern.ch>
 '''
 __doc__ = """The pyh.py module is the core of the PyH package. PyH lets you
 generate HTML tags from within your python code.
@@ -153,7 +152,7 @@ class PyH(Tag):
 
 def set_table_attr(table=None):
     '''
-    @summary:ÉèÖÃtableµÄÊôĞÔ
+    @summary:è®¾ç½®tableçš„å±æ€§
     '''
     table.attributes['mso-style-name'] = 'MsoNormalTable'
     table.attributes['mso-tstyle-rowband-size'] = 0
@@ -177,32 +176,32 @@ def set_table_attr(table=None):
 
 def set_tr_head_attr(tr):
     '''
-    @summary: ÉèÖÃtrµÄÊôĞÔ  
+    @summary: è®¾ç½®trçš„å±æ€§  
     '''
     tr.attributes['style'] = 'mso-yfti-irow:0;mso-yfti-firstrow:yes'
 
 
 def set_td_head_attr(td=None):
     '''
-    @summary: ÉèÖÃtableÖĞ±íÍ·ÖĞµÄtdµÄÊôĞÔ
+    @summary: è®¾ç½®tableä¸­è¡¨å¤´ä¸­çš„tdçš„å±æ€§
     '''     
     td.attributes['style'] = 'border:solid #98BF21 1.0pt;background:#A7C942;padding:4.5pt 4.5pt 4.5pt 9.0pt'
 
 def set_td_body_no_bg_attr(td=None):
     '''
-    @summary: ÉèÖÃtableÖĞbody²¿·ÖµÄtdµÄÊôĞÔ(ÆæÊıĞĞ£¬ÎŞ±³¾°É«)
+    @summary: è®¾ç½®tableä¸­bodyéƒ¨åˆ†çš„tdçš„å±æ€§(å¥‡æ•°è¡Œï¼Œæ— èƒŒæ™¯è‰²)
     '''
     td.attributes['style'] = 'border:solid #98BF21 1.0pt;border-top:none;background:white; padding:3.0pt 2.25pt 3.0pt 9.0pt'
 
 def set_td_body_bg_attr(td=None):
     '''
-    @summary: ÉèÖÃtableÖĞbody²¿·ÖµÄtdµÄÊôĞÔ(Å¼ÊıĞĞ£¬ÓĞ±³¾°É«)
+    @summary: è®¾ç½®tableä¸­bodyéƒ¨åˆ†çš„tdçš„å±æ€§(å¶æ•°è¡Œï¼Œæœ‰èƒŒæ™¯è‰²)
     '''
     td.attributes['style'] = 'border:solid #98BF21 1.0pt;border-top:none;background:#EAF2D3; padding:3.0pt 2.25pt 3.0pt 9.0pt'
 
 def set_p_attr(p=None):
     '''
-    @summary: ÉèÖÃpµÄÊôĞÔ
+    @summary: è®¾ç½®pçš„å±æ€§
     '''
     p.attributes['mso-style-unhide'] = 'no'
     p.attributes['mso-style-qformat'] = 'yes'
@@ -212,12 +211,12 @@ def set_p_attr(p=None):
     p.attributes['mso-pagination'] = 'widow-orphan'
     p.attributes['font-size'] = '12.0pt'
     p.attributes['font-family'] = 'Times New Roman'
-    p.attributes['mso-fareast-font-family'] = 'ËÎÌå'
+    p.attributes['mso-fareast-font-family'] = 'å®‹ä½“'
     p.attributes['style'] = 'line-height:18px;margin:0px;padding:0px;'
 
 def set_span_head_attr(span=None):
     '''
-    @summary: ÉèÖÃtableµÄheadÖĞspanµÄÊôĞÔ
+    @summary: è®¾ç½®tableçš„headä¸­spançš„å±æ€§
     '''
     span.attributes['lang'] = 'EN-US'
     span.attributes['style'] = 'font-size:9.0pt;font-family:\'Trebuchet MS\',\'sans-serif\';color:white;text-transform:uppercase;letter-spacing:1.5pt'
@@ -225,7 +224,7 @@ def set_span_head_attr(span=None):
 
 def set_span_body_attr(span=None):
     '''
-    @summary: ÉèÖÃtableµÄbodyÖĞspanµÄÊôĞÔ
+    @summary: è®¾ç½®tableçš„bodyä¸­spançš„å±æ€§
     '''
     span.attributes['lang'] = 'EN-US'
     span.attributes['style'] = 'font-size:9.0pt;font-family:\'Trebuchet MS\',\'sans-serif\';color:black'
@@ -233,37 +232,37 @@ def set_span_body_attr(span=None):
 
 def handle_newline_symbol(src):
     '''
-    @summary: ½«"\n"×ª»¯Îª"<br/>", Ê¹»»ĞĞ·ûÄÜÔÚhtmlÖĞÏÔÊ¾
-    @param src: ĞèÒª±»×ª»¯µÄstring 
+    @summary: å°†"\n"è½¬åŒ–ä¸º"<br/>", ä½¿æ¢è¡Œç¬¦èƒ½åœ¨htmlä¸­æ˜¾ç¤º
+    @param src: éœ€è¦è¢«è½¬åŒ–çš„string 
     '''
     return string.replace(src, '\n', '<br/>')
 
 def handle_space_symbol(src):
     '''
-    @summary: ½«" "×ª»¯Îª"&nbsp", Ê¹¿Õ¸ñ·ûÄÜÔÚhtmlÖĞÏÔÊ¾
-    @param src: ĞèÒª±»×ª»¯µÄstring 
+    @summary: å°†" "è½¬åŒ–ä¸º"&nbsp", ä½¿ç©ºæ ¼ç¬¦èƒ½åœ¨htmlä¸­æ˜¾ç¤º
+    @param src: éœ€è¦è¢«è½¬åŒ–çš„string 
     '''
     return string.replace(src, ' ', '&nbsp')  
 
 def handle_tab_symbol(src):
     '''
-    @summary: ½«"\t"×ª»¯Îª"&nbsp&nbsp", Ê¹1¸ötab×ª»»Îª4¸ö¿Õ¸ñ£¬ÄÜÔÚhtmlÖĞÏÔÊ¾
-    @param src: ĞèÒª±»×ª»¯µÄstring 
+    @summary: å°†"\t"è½¬åŒ–ä¸º"&nbsp&nbsp", ä½¿1ä¸ªtabè½¬æ¢ä¸º4ä¸ªç©ºæ ¼ï¼Œèƒ½åœ¨htmlä¸­æ˜¾ç¤º
+    @param src: éœ€è¦è¢«è½¬åŒ–çš„string 
     '''
     return string.replace(src, '\t', '&nbsp&nbsp&nbsp&nbsp')   
 
 def format_for_html(src):
     '''
-    @summary: htmlÖĞÏÔÊ¾
-    @param src: ĞèÒª±»×ª»¯µÄstring 
+    @summary: htmlä¸­æ˜¾ç¤º
+    @param src: éœ€è¦è¢«è½¬åŒ–çš„string 
     '''
     return handle_newline_symbol(handle_space_symbol(handle_tab_symbol(src)))
 
 def add_table_head(table_dest=None, *elems):
     '''
-    @summary: ¼ÓÈëtableµÄ±íÍ·²¿·Ö
-    @param table_dest: ÒªÌí¼ÓµÄtable£¨pyh.tableÀàĞÍ£© 
-    @param elems: ±íÍ·ÖĞµÄ¸÷¸öÏîÄ¿£¨stringÀàĞÍ£©
+    @summary: åŠ å…¥tableçš„è¡¨å¤´éƒ¨åˆ†
+    @param table_dest: è¦æ·»åŠ çš„tableï¼ˆpyh.tableç±»å‹ï¼‰ 
+    @param elems: è¡¨å¤´ä¸­çš„å„ä¸ªé¡¹ç›®ï¼ˆstringç±»å‹ï¼‰
     '''
     tr_head = table_dest << tr()
     set_tr_head_attr(tr_head)
@@ -280,10 +279,10 @@ def add_table_head(table_dest=None, *elems):
 
 def add_table_body_line(table_dest, bg_flag, *elems):
     '''
-    @summary: ¼ÓÈëtableµÄbody²¿·Ö£¨Ò»ĞĞ£©
-    @param table_dest: ÒªÌí¼ÓµÄtable£¨pyh.tableÀàĞÍ£© 
-    @param elems: Ò»ĞĞµÄ¸÷¸öÏîÄ¿£¨stringÀàĞÍ£©
-    @param bg_flag: ±êÊ¾ÕâÒ»ĞĞÊÇ·ñĞèÒª±³¾°É«£¨boolÀàĞÍ£© 
+    @summary: åŠ å…¥tableçš„bodyéƒ¨åˆ†ï¼ˆä¸€è¡Œï¼‰
+    @param table_dest: è¦æ·»åŠ çš„tableï¼ˆpyh.tableç±»å‹ï¼‰ 
+    @param elems: ä¸€è¡Œçš„å„ä¸ªé¡¹ç›®ï¼ˆstringç±»å‹ï¼‰
+    @param bg_flag: æ ‡ç¤ºè¿™ä¸€è¡Œæ˜¯å¦éœ€è¦èƒŒæ™¯è‰²ï¼ˆboolç±»å‹ï¼‰ 
     '''
     tr_body = table_dest << tr()
     
@@ -302,34 +301,34 @@ def add_table_body_line(table_dest, bg_flag, *elems):
 
 class XtsHtmlTable(table):
     '''
-    @summary:XTSÖĞhtml±¨±íÀà
-    @note:ÓÃ»§Ö»ĞèÒª¸ø³ö¡°Êı¾İ¡±¼´¿É£¬²»ÓÃ¹Ü¸ñÊ½ÉÏµÄÉè¼Æ
+    @summary:XTSä¸­htmlæŠ¥è¡¨ç±»
+    @note:ç”¨æˆ·åªéœ€è¦ç»™å‡ºâ€œæ•°æ®â€å³å¯ï¼Œä¸ç”¨ç®¡æ ¼å¼ä¸Šçš„è®¾è®¡
     '''
     def __init__(self):
         #self.tagname = "table"
         super(XtsHtmlTable, self).__init__()
-        #ÎªÁËÊµÏÖ¸ôĞĞÒõÓ°
+        #ä¸ºäº†å®ç°éš”è¡Œé˜´å½±
         self.line_num = 0
-        #ÉèÖÃÓïÑÔÎªÖĞÎÄ
+        #è®¾ç½®è¯­è¨€ä¸ºä¸­æ–‡
         self.attributes["lang"] = "ZH-CN"
-        #ÉèÖÃ±àÂë¸ñÊ½Îªutf-8
+        #è®¾ç½®ç¼–ç æ ¼å¼ä¸ºutf-8
         self << meta(**{"http-equiv":"Content-Type", "content":"text/html; charset=utf-8"})
-        #ÉèÖÃtableµÄ¸ñÊ½
+        #è®¾ç½®tableçš„æ ¼å¼
         set_table_attr(self)
         
     def add_head(self, *elems):
         '''
-        @summary: Ôö¼Ó±í¸ñÖĞ±íÍ·
-        @param elems:±íÍ·ÖĞµÄÊı¾İ
+        @summary: å¢åŠ è¡¨æ ¼ä¸­è¡¨å¤´
+        @param elems:è¡¨å¤´ä¸­çš„æ•°æ®
         '''
         add_table_head(self, *elems)
-        #ÉèÖÃbodyÖĞµÄline_numÎª0£¬Îª¶à¸ö±í¸ñ
+        #è®¾ç½®bodyä¸­çš„line_numä¸º0ï¼Œä¸ºå¤šä¸ªè¡¨æ ¼
         self.line_num = 0
         
     def add_body_line(self, *elems):
         '''
-        @summary: Ôö¼Ó±í¸ñÖĞÒ»ĞĞ
-        @param elems: Ò»ĞĞÖĞµÄÊı¾İ
+        @summary: å¢åŠ è¡¨æ ¼ä¸­ä¸€è¡Œ
+        @param elems: ä¸€è¡Œä¸­çš„æ•°æ®
         '''
         bg_flag = False        
         if 1 == self.line_num % 2:
@@ -340,7 +339,7 @@ class XtsHtmlTable(table):
         
     def __str__(self):
         '''
-        @summary: ·µ»ØtableµÄhtmlÆ¬¶Î(×Ö·û´®)
+        @summary: è¿”å›tableçš„htmlç‰‡æ®µ(å­—ç¬¦ä¸²)
         '''
         return self.render()
         
@@ -351,7 +350,7 @@ def _test():
     for num in range(10):
         test_table.add_body_line('case/as/case1_error.py', 'xuwei01@baidu.com', 'test1', '0.119')
    
-    #Ö»»ñÈ¡tableµÄhtmlÆ¬¶Î
+    #åªè·å–tableçš„htmlç‰‡æ®µ
     #print str(test_table)
     f = open('/home/users/zhongzhiwei01/nginx_pb/html/bbb.html', 'w')
     f.write(str(test_table))
